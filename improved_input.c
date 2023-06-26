@@ -5,14 +5,6 @@
 #include <poll.h>
 #include "vector.h"
 
-void arr_pr(char *arr, int size) {
-	printf("{");
-	for (int i=0; i<size-1; i++) {
-		printf("%d, ", arr[i]);
-	}
-	printf("%d}\n", arr[size-1]);
-}
-
 void cbreak(struct termios *tty) {
 	tty->c_cc[VTIME] = 0; tty->c_cc[VMIN] = 1;
 	tty->c_lflag &= ~(ECHO | ICANON);
