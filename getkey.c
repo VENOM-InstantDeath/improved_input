@@ -23,7 +23,7 @@ void right(struct string *str, int *p) {
 }
 
 void left(struct string *str, int* p) {
-	if (p) {
+	if (*p) {
 		printf("\033[1D");
 		fflush(stdout);
 		(*p)--;

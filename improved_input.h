@@ -3,5 +3,5 @@
 #include <poll.h>
 #include "vector.h"
 void cbreak(struct termios *tty);
-int improved_input(struct string *str);
+int improved_input(struct string *str, char**SRC, int src_size);
 #endif
